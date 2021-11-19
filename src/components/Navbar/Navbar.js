@@ -53,7 +53,7 @@ export default class Navbar extends Component {
                             <Link smooth to="#projects">Projects</Link>
                         </li>
                         <li>
-                            <a href="https://drive.google.com/file/d/1m0tYGKQOz4Vew-aQhgQABa5ETkxLzUWA/view?usp=sharing" target="_blank">Resume</a>
+                            <a href="https://docs.google.com/document/d/15bet1sTfrKPRN7pOPpI_3DOL0TMJysrxlmUCPI_Xxkg/edit?usp=sharing" target="_blank">Resume</a>
                         </li>
                         <li>
                             <Link smooth to="#contact">Contact</Link>
