@@ -3,13 +3,12 @@ import './Projects.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import roomBook from '../../images/roomBook.png';
-import outcache from '../../images/outcache.png';
-import bookShoe from '../../images/bookShoe.png';
-import gifSearch from '../../images/gifSearch.png';
+import outcache   from '../../images/outcache.png';
+import gifSearch  from '../../images/gifSearch.png';
 import skyskraper from '../../images/skyskraper.png';
-import rpgGame from '../../images/rpgGame.png';
-import shoestore from '../../images/shoestore.png';
+import shoestore  from '../../images/shoestore.png';
+import compass    from '../../images/compass.png';
+import fivestone  from '../../images/fivestone.png';
 
 AOS.init({
     offet: 200,
@@ -22,18 +21,15 @@ export default function Projects() {
             <div id="projects"></div>
             <div className="container">
                 <section className="featured-card" data-aos="fade-up">
-                    <img src={shoestore} alt="E-commerce shoe store site" />
+                    <img src={compass} alt="Compass Law Group Website" />
                     <div>
                         <div className="border-box">
                             <div className="text-box">
-                                <h3>ShoeStore</h3>
-                                <p>A serverless E-commerce website built with React.js and AWS Cloud. AWS services used include Amplify, Cognito, AppSync, DynamoDB, and S3. The shopping cart was built without libraries, and includes cart persistence during user sign-in.
+                                <h3>Compass Law Group Website</h3>
+                                <p>Website built from scratch using a Vue.js frontend, PHP/Laravel backend, and Statamic CMS. One highlight is the testimonial rotator. I worked with a designer on this project.
                                 <br /><br />
-                                    <a href="https://master.d1buvo1t3dd1m7.amplifyapp.com/" target="_blank">
-                                        <button class="btn btn-primary" >View Project</button>
-                                    </a>
-                                    <a href="https://github.com/timstarkk/shoestore" target="_blank">
-                                        <button class="btn btn-secondary">View Source</button>
+                                    <a href="https://www.compasslawgroup.com">
+                                        <button class="btn btn-primary">View Project</button>
                                     </a>
                                     <hr />
                                 </p>
@@ -43,60 +39,58 @@ export default function Projects() {
                 </section>
                 <br></br>
 
+                <section className="card" data-aos="fade-left">
+                    <img src={fivestone} alt="Fivestone Website" />
+                    <div>
+                        <div className="border-box">
+                            <div className="text-box">
+                                <h3>Fivestone Website</h3>
+                                <p>I built this website for a design agency in New York using a Vue.js frontend, PHP/Laravel backend, and Statamic CMS. one highlight is the menu drawer animation.  I worked with a designer on this project.
+                            <br /><br />
+                                    <a href="https://www.fivestone.com">
+                                        <button class="btn btn-primary">View Project</button>
+                                    </a>
+                                    <hr />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section className="card" data-aos="fade-left">
+                    <img src={shoestore} alt="Shoe Store Example Site" />
+                    <div>
+                        <div className="border-box">
+                            <div className="text-box">
+                                <h3>ShoeStore</h3>
+                                <p>A serverless E-commerce website built with React.js and AWS Cloud. AWS services used include Amplify, Cognito, AppSync, DynamoDB, and S3. The shopping cart was built from scratch without using libraries.
+                            <br /><br />
+                                    <a href="https://master.d1buvo1t3dd1m7.amplifyapp.com/">
+                                        <button class="btn btn-primary" >View Project</button>
+                                    </a>
+                                    <a href="https://github.com/timstarkk/shoestore">
+                                        <button class="btn btn-secondary">View Source</button>
+                                    </a>
+                                    <hr />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section className="card" data-aos="fade-right">
-                    <img src={outcache} alt="Hotel Room Locator" />
+                    <img src={outcache} alt="Outcache" />
                     <div>
                         <div className="border-box">
                             <div className="text-box">
                                 <h3>Outcache</h3>
                                 <p>A peer-to-peer rental website for outdoor equipment. Built using the MERN stack. I was responsible for the front-end of this website, as well as some back end routing and component work.
                             <br /><br />
-                                    <a href="http://www.outcache.com/" target="_blank">
+                                    <a href="http://www.outcache.com/">
                                         <button class="btn btn-primary" >View Project</button>
                                     </a>
-                                    <a href="https://github.com/timstarkk/outcache" target="_blank">
-                                        <button class="btn btn-secondary">View Source</button>
-                                    </a>
-                                    <hr />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="card" data-aos="fade-left">
-                    <img src={roomBook} alt="Hotel Room Locator" />
-                    <div>
-                        <div className="border-box">
-                            <div className="text-box">
-                                <h3>Hotel Room Locator</h3>
-                                <p>A React.js application that allows users to search for and locate hotel rooms. This app features Google Maps API integration and allows users to filter the search results based on certain parameters, in which case the results will automatically re-render to display updated search results.
-                            <br /><br />
-                                    <a href="http://roomboook.herokuapp.com/" target="_blank">
-                                        <button class="btn btn-primary" >View Project</button>
-                                    </a>
-                                    <a href="https://github.com/timstarkk/roombook" target="_blank">
-                                        <button class="btn btn-secondary">View Source</button>
-                                    </a>
-                                    <hr />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="card" data-aos="fade-right">
-                    <img src={bookShoe} alt="Book and Shoe Finder" />
-                    <div>
-                        <div className="border-box">
-                            <div className="text-box">
-                                <h3>Book and Shoe Finder</h3>
-                                <p>A Computer Vision application that uses realtime object detection to identify books and shoes. I created and trained the deep learning model using IBM Cloud Annotations and IBM Watson Machine Learning. The application itself was forked from Github. I only made visual changes to the app and optimized for mobile. This is hosted on Heroku and is SSL-encrypted using Cloudflare.
-                            <br /><br />
-                                    <a href="https://www.timbostark.com" target="_blank">
-                                        <button class="btn btn-primary" >View Project</button>
-                                    </a>
-                                    <a href="https://github.com/timstarkk/object-detection-react" target="_blank">
+                                    <a href="https://github.com/timstarkk/outcache">
                                         <button class="btn btn-secondary">View Source</button>
                                     </a>
                                     <hr />
@@ -114,10 +108,10 @@ export default function Projects() {
                                 <h3>Mongo News Scraper</h3>
                                 <p>A Node.js app that uses Cheerio.js to scrape the web (FinViz.com) for news articles, and stores them in a MongoDB database. Links to those articles are then pulled from the database and displayed on the homepage, and users can also create/delete comments on each article. This app uses mLab for hosting the database.
                             <br /><br />
-                                    <a href="https://fin-news-talk.herokuapp.com" target="_blank">
+                                    <a href="https://fin-news-talk.herokuapp.com">
                                         <button class="btn btn-primary" >View Project</button>
                                     </a>
-                                    <a href="https://github.com/timstarkk/news-scraper" target="_blank">
+                                    <a href="https://github.com/timstarkk/news-scraper">
                                         <button class="btn btn-secondary">View Source</button>
                                     </a>
                                     <hr />
@@ -135,31 +129,10 @@ export default function Projects() {
                                 <h3>Gif Search</h3>
                                 <p>A simple gif search tool using the Giphy API. This was made using jQuery and Bootstrap, and uses local storage to save search terms.
                             <br /><br />
-                                    <a href="https://timstarkk.github.io/GIFsearch/" target="_blank">
+                                    <a href="https://timstarkk.github.io/GIFsearch/">
                                         <button class="btn btn-primary" >View Project</button>
                                     </a>
-                                    <a href="https://github.com/timstarkk/GIFsearch" target="_blank">
-                                        <button class="btn btn-secondary">View Source</button>
-                                    </a>
-                                    <hr />
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section className="card" data-aos="fade-left">
-                    <img src={rpgGame} alt="Card Fighting Game" />
-                    <div>
-                        <div className="border-box">
-                            <div className="text-box">
-                                <h3>Card Fighting Game</h3>
-                                <p>A simplistic card-fighting game where the user must choose a hero and defeat all remaining enemies to win. Built with html/css/javascript, using bootstrap and jQuery. This was my first time trying animations.
-                            <br /><br />
-                                    <a href="https://timstarkk.github.io/card-game" target="_blank">
-                                        <button class="btn btn-primary" >View Project</button>
-                                    </a>
-                                    <a href="https://github.com/timstarkk/card-game" target="_blank">
+                                    <a href="https://github.com/timstarkk/GIFsearch">
                                         <button class="btn btn-secondary">View Source</button>
                                     </a>
                                     <hr />
