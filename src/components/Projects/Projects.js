@@ -26,7 +26,7 @@ export default function Projects() {
                         <div className="border-box">
                             <div className="text-box">
                                 <h3>Compass Law Group Website</h3>
-                                <p>Website built from scratch using a Vue.js frontend, PHP/Laravel backend, and Statamic CMS. One highlight is the testimonial rotator. I worked with a designer on this project.
+                                <p>This website was created from scratch using a Vue.js frontend, PHP/Laravel backend, and Statamic CMS. One highlight is the testimonial rotator. I worked with a designer on this project.
                                 <br /><br />
                                     <a href="https://www.compasslawgroup.com">
                                         <button class="btn btn-primary">View Project</button>
