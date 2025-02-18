@@ -5,6 +5,7 @@ import linkedInIcon from '../../public/linkedin.svg';
 import githubIcon from '../../public/github.svg';
 import leetcodeIcon from '../../public/leet.svg';
 import Bio from './components/Bio';
+import ProjectHighlights from './components/ProjectHighlights';
 
 export type ComponentProps = {
   something: any;
@@ -51,6 +52,7 @@ const Home: FC<ComponentProps> = ({ something, ...props }) => {
       </div>
     </header>
     <Bio />
+    <ProjectHighlights />
   </div>;
 };
 
