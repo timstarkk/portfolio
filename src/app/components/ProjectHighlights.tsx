@@ -18,34 +18,32 @@ export default function ProjectHighlights() {
           {/* MDisrupt */}
           <div className="xl:order-2 bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-1 flex flex-col">
             <div className="h-36 sm:h-48 bg-gray-100 bg-cover bg-center bg-mdisrupt bg-no-repeat" />
-            <div className="p-4 sm:p-6 relative flex-1 flex flex-col justify-between">
-              <div className="flex flex-col justify-between h-auto sm:h-[175px]">
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-lg sm:text-xl font-newsreader font-semibold text-spaceGray">
-                    MDisrupt
-                  </h3>
-                  <a 
-                    href="https://mdisrupt.com" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="self-start inline-flex items-center px-2 py-1 sm:px-3 sm:py-1.5 bg-gray-100 text-spaceGray hover:bg-gray-200 transition-colors duration-200 rounded-sm text-xs font-medium"
-                  >
-                    View Project
-                    <svg className="ml-1.5 w-3 h-3 sm:w-3.5 sm:h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </a>
-                </div>
-                <div className="space-y-3 sm:space-y-4 mt-4">
-                  <p className="text-gray-600 text-xs sm:text-sm line-clamp-3 sm:line-clamp-none">
+            <div className="p-6 relative flex-1 flex flex-col justify-between">
+              <a 
+                href="https://mdisrupt.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="absolute top-6 right-6 inline-flex items-center px-3 py-1.5 bg-gray-100 text-spaceGray hover:bg-gray-200 transition-colors duration-200 rounded-sm text-xs font-medium"
+              >
+                View Project
+                <svg className="ml-1.5 w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </a>
+              <div className="flex flex-col justify-between h-[175px]">
+                <h3 className="text-xl font-newsreader font-semibold text-spaceGray">
+                  MDisrupt
+                </h3>
+                <div className="space-y-4">
+                  <p className="text-gray-600 text-sm">
                     An AI-powered, Flutter-based expert marketplace for Web, iOS, and Android. Focused on providing operational expertise to health-tech companies.
                   </p>
-                  <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                    <span className="px-2 py-0.5 sm:px-3 sm:py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Flutter</span>
-                    <span className="px-2 py-0.5 sm:px-3 sm:py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Dart</span>
-                    <span className="px-2 py-0.5 sm:px-3 sm:py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Java</span>
-                    <span className="px-2 py-0.5 sm:px-3 sm:py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Next.js</span>
-                    <span className="px-2 py-0.5 sm:px-3 sm:py-1 bg-gray-100 text-gray-600 text-xs rounded-full">TypeScript</span>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Flutter</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Dart</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Java</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Next.js</span>
+                    <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">TypeScript</span>
                   </div>
                 </div>
               </div>
