@@ -4,6 +4,7 @@ import Image from 'next/image';
 import linkedInIcon from '../../public/linkedin.svg';
 import githubIcon from '../../public/github.svg';
 import leetcodeIcon from '../../public/leet.svg';
+import Bio from './components/Bio';
 
 export type ComponentProps = {
   something: any;
@@ -49,6 +50,7 @@ const Home: FC<ComponentProps> = ({ something, ...props }) => {
         </Link>
       </div>
     </header>
+    <Bio />
   </div>;
 };
 
