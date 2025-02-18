@@ -13,6 +13,9 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'astronaut': "url('/astro.avif')",
+        'compass': "url('/compass.png')",
+        'mdisrupt': "url('/mdisrupt.png')",
+        'fivestone': "url('/fivestone.png')",
       },
       fontFamily: {
         'newsreader': ['Newsreader', 'serif'],

@@ -1,30 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-
-const projects = [
-  {
-    title: "Marketplace Platform",
-    description: "A full-stack marketplace application built with Next.js, Spring Boot, and AWS. Features real-time messaging, payment processing, and dynamic search.",
-    tech: ["Next.js", "Java", "AWS"],
-    image: "/marketplace-preview.jpg",  // You'll need to add this image
-    link: "/projects"
-  },
-  {
-    title: "Cross-Platform Mobile App",
-    description: "A Flutter-based mobile application for both iOS and Android, featuring offline-first architecture and real-time synchronization.",
-    tech: ["Flutter", "Dart", "Firebase"],
-    image: "/mobile-preview.jpg",  // You'll need to add this image
-    link: "/projects"
-  },
-  {
-    title: "Enterprise Dashboard",
-    description: "A scalable dashboard for enterprise clients, handling large datasets with efficient data visualization and real-time updates.",
-    tech: ["React", "TypeScript", "GraphQL"],
-    image: "/dashboard-preview.jpg",  // You'll need to add this image
-    link: "/projects"
-  }
-];
 
 export default function ProjectHighlights() {
   return (
@@ -32,7 +7,7 @@ export default function ProjectHighlights() {
       <div className="space-y-12">
         <div className="text-center">
           <h2 className="text-4xl font-newsreader font-bold text-spaceGray mb-4">
-            Featured Projects
+            Highlights
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             A selection of my recent work in web and mobile development.
@@ -40,41 +15,63 @@ export default function ProjectHighlights() {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div 
-              key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-1"
-            >
-              <div className="h-48 relative bg-gray-100">
-                {project.image && (
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover"
-                  />
-                )}
-              </div>
-              <div className="p-6 space-y-4">
-                <h3 className="text-xl font-newsreader font-semibold text-spaceGray">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 text-sm">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tech.map((tech, techIndex) => (
-                    <span 
-                      key={techIndex}
-                      className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+          {/* Compass Law Group */}
+          <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-1">
+            <div className="h-48 bg-gray-100 bg-cover bg-center bg-compass bg-no-repeat" />
+            <div className="p-6 space-y-4">
+              <h3 className="text-xl font-newsreader font-semibold text-spaceGray">
+                Compass Law Group
+              </h3>
+              <p className="text-gray-600 text-sm">
+                This website was created from scratch using a Vue.js frontend, PHP/Laravel backend, and Statamic CMS. One highlight is the testimonial rotator. I worked with a designer on this project.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Vue.js</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">PHP</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Laravel</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Statamic</span>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* MDisrupt */}
+          <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-1">
+            <div className="h-48 bg-gray-100 bg-cover bg-center bg-mdisrupt bg-no-repeat" />
+            <div className="p-6 space-y-4">
+              <h3 className="text-xl font-newsreader font-semibold text-spaceGray">
+                MDisrupt
+              </h3>
+              <p className="text-gray-600 text-sm">
+                A Flutter-based mobile application for Web, iOS, and Android. Expert marketplace for health-tech startups.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Flutter</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Dart</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Java</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Next.js</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Fivestone */}
+          <div className="bg-white rounded-lg overflow-hidden shadow-lg transition-transform hover:-translate-y-1">
+            <div className="h-48 bg-gray-100 bg-cover bg-center bg-fivestone bg-no-repeat" />
+            <div className="p-6 space-y-4">
+              <h3 className="text-xl font-newsreader font-semibold text-spaceGray">
+                Fivestone
+              </h3>
+              <p className="text-gray-600 text-sm">
+                I created the website for a design agency in New York using a Vue.js frontend, PHP/Laravel backend, and Statamic CMS. one highlight is the menu drawer animation. I worked with a designer on this project.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Vue.js</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">PHP</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Laravel</span>
+                <span className="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">Statamic</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="text-center">
