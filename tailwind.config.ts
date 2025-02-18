@@ -12,7 +12,15 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'astronaut': "url('/astro.avif')",
       },
+      fontFamily: {
+        'newsreader': ['Newsreader', 'serif'],
+      },
+    },
+    colors: {
+      'spaceGray': '#1B1C1E',
+      'spaceWhite': '#E4E5E7'
     },
   },
   plugins: [],
