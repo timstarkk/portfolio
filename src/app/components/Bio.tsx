@@ -14,7 +14,7 @@ export default function Bio() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-gray-700">
-            I'm a software engineer who builds web apps and marketplaces. Over 3+ years, my work has helped secure funding rounds and driven business growth. Strong with AWS and cross-platform development.
+              I&apos;m a software engineer who builds web apps and marketplaces. Over 3+ years, my work has helped secure funding rounds and driven business growth.
             </p>
           </div>
 
