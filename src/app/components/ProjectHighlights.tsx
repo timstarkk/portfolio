@@ -7,11 +7,8 @@ export default function ProjectHighlights() {
       <div className="space-y-12">
         <div className="text-center">
           <h2 className="text-4xl font-newsreader font-bold text-spaceGray mb-4">
-            Highlights
+            My Work
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            A selection of my recent work in web and mobile development.
-          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -72,15 +69,6 @@ export default function ProjectHighlights() {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="text-center">
-          <Link 
-            href="/projects"
-            className="inline-block bg-spaceGray text-spaceWhite font-semibold px-12 py-4 rounded-sm text-sm hover:bg-opacity-90 transition-all"
-          >
-            View All Projects
-          </Link>
         </div>
       </div>
     </section>
