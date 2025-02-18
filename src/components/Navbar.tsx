@@ -12,9 +12,8 @@ export const Navbar: FC<NavbarProps> = ({ something, ...props }) => {
         
       <Link href="/"><h2 className="text-2xl font-newsreader font-semibold">Tim Stark</h2></Link>
         <div className="flex gap-6">
-          <Link href="#">About</Link>
-          <Link href="/projects">Projects</Link>
-          <Link href="#">Contact</Link>
+          <Link href="#bio">About</Link>
+          <Link href="#projects">Projects</Link>
           <Link href="https://docs.google.com/document/d/15bet1sTfrKPRN7pOPpI_3DOL0TMJysrxlmUCPI_Xxkg/edit?usp=sharing" target="_blank" rel="noreferrer">Resume</Link>
         </div>
       </div>

@@ -7,6 +7,7 @@ import leetcodeIcon from '../../public/leet.svg';
 import Bio from './components/Bio';
 import ProjectHighlights from './components/ProjectHighlights';
 import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
 
 export type ComponentProps = {
   something: any;
@@ -55,6 +56,7 @@ const Home: FC<ComponentProps> = ({ something, ...props }) => {
     <Bio />
     <Testimonials />
     <ProjectHighlights />
+    <Footer />
   </div>;
 };
 
