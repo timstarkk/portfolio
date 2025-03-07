@@ -10,10 +10,20 @@ import AosInitializer from '../components/AosInitializer';
 export default function Home() {
     const scrollToProjects = (e) => {
         e.preventDefault();
-        const projectsSection = document.getElementById('projects');
-        if (projectsSection) {
-            projectsSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        
+        // Ensure we're in a browser environment
+        if (typeof window === 'undefined') return;
+        
+        // Use setTimeout to ensure DOM is fully loaded
+        setTimeout(() => {
+            const projectsSection = document.getElementById('projects');
+            if (projectsSection) {
+                projectsSection.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }, 100);
     };
 
     return (

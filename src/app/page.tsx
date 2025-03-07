@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import linkedInIcon from '../../public/linkedin.svg';
+import linkedInIcon from '../../public/LinkedIn.svg';
 import githubIcon from '../../public/github.svg';
 import leetcodeIcon from '../../public/leet.svg';
 import Bio from './components/Bio';
