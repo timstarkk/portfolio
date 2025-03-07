@@ -1,19 +1,27 @@
 import React from 'react'
-import { HashLink as Link } from 'react-router-hash-link';
 import Hero from '../components/Hero/Hero';
 import Banner from '../components/Banner/Banner';
 import About from '../components/About/About';
 import Projects from '../components/Projects/Projects';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
-
+import AosInitializer from '../components/AosInitializer';
 
 export default function Home() {
+    const scrollToProjects = (e) => {
+        e.preventDefault();
+        const projectsSection = document.getElementById('projects');
+        if (projectsSection) {
+            projectsSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <>
+            <AosInitializer />
             <Hero>
                 <Banner title="TIM STARK" subtitle="Full-Stack Developer">
-                    <Link smooth to="#projects" id="big-btn" className="btn btn-primary">view projects</Link>
+                    <button onClick={scrollToProjects} id="big-btn" className="btn btn-primary">view projects</button>
                 </Banner>
             </Hero>
             <About />

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import type { FC } from 'react';
 import Image from 'next/image';
 import linkedInIcon from '../../public/linkedin.svg';
 import githubIcon from '../../public/github.svg';
@@ -9,12 +8,8 @@ import ProjectHighlights from './components/ProjectHighlights';
 import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 
-export type ComponentProps = {
-  something: any;
-};
-
-const Home: FC<ComponentProps> = ({ something, ...props }) => {
-  return <div className="relative" {...props}>
+const Home = () => {
+  return <div className="relative">
     <header className="h-[551px] bg-spaceGray text-spaceWhite flex flex-col justify-center items-center gap-4 bg-[url('../../astro.avif')] bg-[center_200px_left_200px] bg-no-repeat bg-contain">
       <h2 className="text-6xl font-newsreader font-bold">Tim Stark</h2>
       <h3 className="text-xl font-newsreader font-semibold">Full-Stack Software Engineer</h3>
